@@ -1,0 +1,279 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/*@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-Light.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-Light.woff') format('woff');
+  font-weight:300;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-LightItalic.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-LightItalic.woff') format('woff');
+  font-weight:300;
+  font-style:italic;
+  font-display:swap
+}*/
+@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-Regular.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-Regular.woff') format('woff');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-RegularItalic.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-RegularItalic.woff') format('woff');
+  font-weight:400;
+  font-style:italic;
+  font-display:swap
+}
+@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-Medium.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-Medium.woff') format('woff');
+  font-weight:500;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-MediumItalic.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-MediumItalic.woff') format('woff');
+  font-weight:500;
+  font-style:italic;
+  font-display:swap
+}
+/*@font-face {
+  font-family:'Univerza Sans';
+  src:url('../static/fonts/UniverzaSans-Bold.woff2') format('woff2'),
+  url('../static/fonts/UniverzaSans-Bold.woff') format('woff');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap
+}*/
+
+
+html {
+  /* ensure that the vertical scroll-bar is always present;
+   * otherwise there are jumps of the layout when switching from a
+   * very short page to a longer one */
+  overflow-y: scroll;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Univerza Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+  text-align: left;
+}
+
+a {
+  color: #000;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: #e03127; 
+  text-decoration-thickness: auto;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #e03127;
+}
+
+div#content-container {
+  max-width: 64em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+div#content {
+  width: 100%;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 750px) {
+  div#content {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+}
+
+
+/* HEADER */
+header {
+  padding-top: 38px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e03127;
+  color: #58595b;
+}
+
+@media (max-width:787.98px) {
+  header {
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+}
+
+@media (max-width:575.98px) {
+  header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+header .title {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+header .sub {
+  font-size: 26px;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+@media (max-width:787.98px) {
+  header .title {
+    font-size:12px;
+    line-height:14.67px
+  }
+  header .sub {
+    margin-top:3px;
+    font-size:11.12px
+  }
+}
+
+@media (max-width:575.98px) {
+  header .sub {
+    display:none
+  }
+}
+
+
+header a,
+header a:hover {
+  color: #000000;
+  text-decoration: none;
+  background-image: none;
+}
+
+/* GENERAL */
+table {
+  margin-top: 1.5em;
+  border: none;
+  border-collapse: collapse;
+}
+
+table td {
+  vertical-align: top;
+  padding: 0.2em;
+}
+
+@media all and (max-width: 750px) {
+  table {
+    border-spacing: 0 1em;
+    border-collapse: separate;
+  }
+
+  table td {
+    padding: 0.1em;
+  }
+}
+
+.h1, h1 {
+  font-size: 1.35em;
+}
+
+.h2, h2 {
+  font-size: 1.1em;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.75em;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #58595b;
+  color: #e03127;
+}
+
+/*h1::before, h2::before {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-right: 0.4em;
+  background-color: #e03127;*/
+  /*position: relative;
+  top: 0px;*/
+/*}*/
+
+#logos {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logos img {
+  height: 70px;
+  margin: 10px;
+}
+
+#logos a {
+  background-image: none;
+}
+
+div#footer {
+  padding-top: 2em;
+  font-size: 13px;
+  text-align: center;
+  color: #aaa;
+  padding-bottom: 4em;
+}
+
+div#footer a {
+  background: none;
+  color: #aaa;
+}
+
+.img-banner {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  width: 100%;
+}
+
+.highlight {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25em 1em;
+  border: 1px solid #888888;
+  background: #eeeeee;
+}
+
+strong {
+  font-weight: 500;
+}
