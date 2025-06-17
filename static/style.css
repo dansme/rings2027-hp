@@ -127,7 +127,7 @@ header {
 
 @media (max-width:787.98px) {
   header {
-    padding-top: 19px;
+    padding-top: 10px;
     padding-bottom: 19px;
   }
 }
@@ -153,12 +153,12 @@ header .sub {
 
 @media (max-width:787.98px) {
   header .title {
-    font-size:12px;
-    line-height:14.67px
+    font-size:20px;
+    line-height:24px;
   }
   header .sub {
     margin-top:3px;
-    font-size:11.12px
+    font-size:18px;
   }
 }
 
@@ -266,7 +266,7 @@ div#footer a {
 }
 
 .highlight {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   padding: 0.25em 1em;
