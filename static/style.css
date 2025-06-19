@@ -119,23 +119,23 @@ div#content {
 
 /* HEADER */
 header {
-  padding-top: 38px;
-  padding-bottom: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #e03127;
   color: #58595b;
 }
 
-@media (max-width:787.98px) {
+@media (max-width:785px) {
   header {
-    padding-top: 10px;
-    padding-bottom: 19px;
+    padding-top: 0.5em;
+    padding-bottom: 0.75em;
   }
 }
 
-@media (max-width:575.98px) {
+@media (max-width:575px) {
   header {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
   }
 }
 
@@ -148,25 +148,24 @@ header .title {
 header .sub {
   font-size: 26px;
   line-height: 1;
-  margin-top: 8px;
+  margin-top: 0.25em;
 }
 
-@media (max-width:787.98px) {
+@media (max-width:785px) {
   header .title {
-    font-size:20px;
-    line-height:24px;
+    font-size:22px;
+    line-height:26px;
   }
   header .sub {
-    margin-top:3px;
     font-size:18px;
   }
 }
 
-@media (max-width:575.98px) {
+/* @media (max-width:575.98px) {
   header .sub {
     display:none
   }
-}
+} */
 
 
 header a,
@@ -188,7 +187,7 @@ table td {
   padding: 0.2em;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 785px) {
   table {
     border-spacing: 0 1em;
     border-collapse: separate;
@@ -209,7 +208,7 @@ table td {
 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 0.75em;
   font-weight: 400;
   line-height: 1.2;
@@ -230,8 +229,8 @@ table td {
 
 #logos {
   text-align: center;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 1em;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -260,16 +259,22 @@ div#footer a {
 }
 
 .img-banner {
-  margin-top: 0.25em;
+  margin-top: 0.75em;
   margin-bottom: 0.25em;
   width: 100%;
+}
+
+@media (max-width:575px) {
+  .img-banner {
+    margin-top: 0.25em;
+  }
 }
 
 .highlight {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0.25em 1em;
+  padding: 0.25em 0.75em;
   border: 1px solid #888888;
   background: #eeeeee;
 }
