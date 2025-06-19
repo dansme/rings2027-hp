@@ -172,7 +172,6 @@ header a,
 header a:hover {
   color: #000000;
   text-decoration: none;
-  background-image: none;
 }
 
 /* GENERAL */
@@ -245,7 +244,7 @@ table td {
   background-image: none;
 }
 
-div#footer {
+footer {
   padding-top: 2em;
   font-size: 13px;
   text-align: center;
@@ -253,9 +252,10 @@ div#footer {
   padding-bottom: 4em;
 }
 
-div#footer a {
+footer a {
   background: none;
   color: #aaa;
+  text-decoration: none;
 }
 
 .img-banner {
